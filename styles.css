@@ -194,6 +194,13 @@ a{color:inherit}
 
 .case__body{margin:1.6rem 0;font-size:1.07rem;line-height:1.66;max-width:38rem}
 
+.case__scale{
+  margin:1.6rem 0;padding:1rem 1.25rem;max-width:38rem;
+  background:var(--paper-raised);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:var(--r);font-size:1.05rem;line-height:1.55;color:var(--ink-2);
+}
+.case__scale strong{color:var(--ink);font-weight:600}
+
 .pullquote{
   margin:1.8rem 0;padding:.2rem 0 .2rem 1.6rem;
   border-left:2px solid var(--line-strong);
