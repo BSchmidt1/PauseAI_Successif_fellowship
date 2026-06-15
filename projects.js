@@ -67,6 +67,21 @@ window.PROJECTS = [
     detail: "Become part of PauseAI's communications team. Write newsletters designed to be translated and reused by other national chapters, draft and place press releases, and co-author or ghost-write op-eds for credible voices. High-leverage for strong writers who want their words multiplied across countries.",
   },
   {
+    title: "Write Pause-focused scenarios",
+    category: "Culture & Reach",
+    region: "Both",
+    effort: "20h+ · scales with depth",
+    expertise: "Some experience",
+    contact: "benjamin",
+    blurb: "Sketch vivid, plausible Pause-focused scenarios of how the next years could unfold — in the spirit of AI 2027 and Europe 2031.",
+    skills: ["Forecasting", "Narrative writing", "Strategy", "Research"],
+    detail: "Write a Pause-focused scenario: a concrete, plausible narrative of how the coming years could play out and where the decisive intervention points lie. A lighter sketch can be done quickly; a richly researched, detailed version rewards much more time. Scenarios make abstract risk legible and give policymakers and the public a shared picture to act on. Use AI 2027 and Europe 2031 below as format references.",
+    links: [
+      { label: "AI 2027", url: "https://ai-2027.com" },
+      { label: "Europe 2031", url: "https://europe2031.ai/" },
+    ],
+  },
+  {
     title: "German quality-press op-ed pipeline",
     category: "Media & Press",
     region: "DE",

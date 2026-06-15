@@ -48,6 +48,16 @@
       "&body=" + encodeURIComponent(body);
   }
 
+  // optional reference links on a project ({label,url}[])
+  function linksHTML(p, cls) {
+    if (!p.links || !p.links.length) return "";
+    var items = p.links.map(function (l) {
+      return '<a class="proj-link" href="' + encodeURI(l.url) + '" target="_blank" rel="noopener">' +
+        esc(l.label) + " ↗</a>";
+    }).join("");
+    return '<div class="' + cls + '">' + items + "</div>";
+  }
+
   // ---- card template -------------------------------------------------------
   function cardHTML(p, i) {
     var c = contactFor(p);
@@ -69,6 +79,7 @@
         // detailed-only blocks (CSS reveals them in detailed view)
         '<p class="card__detail">' + esc(p.detail) + "</p>" +
         '<div class="card__skills">' + skills + "</div>" +
+        linksHTML(p, "card__links") +
 
         '<div class="card__meta">' +
           '<span class="card__effort">⏱ ' + esc(p.effort) + "</span>" +
@@ -137,6 +148,7 @@
         '<div class="modal__fact"><dt>Contact</dt><dd>' + esc(c.name) + "</dd></div>" +
       "</dl>" +
       '<div class="modal__skills">' + skills + "</div>" +
+      linksHTML(p, "modal__links") +
       '<a class="btn-interest" href="' + mailtoFor(p) + '">Express interest ' +
         '<span class="btn-interest__to">→ ' + esc(c.name) + "</span></a>";
 

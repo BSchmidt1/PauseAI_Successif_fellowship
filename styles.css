@@ -385,7 +385,7 @@ a{color:inherit}
 .card__cat{margin-left:auto;text-transform:uppercase;letter-spacing:.08em;font-size:.66rem}
 
 /* detailed-only blocks (hidden in compact) */
-.card__detail,.card__skills,.card__cta{display:none}
+.card__detail,.card__skills,.card__cta,.card__links{display:none}
 
 .card__skills{flex-wrap:wrap;gap:.4rem;margin-top:.9rem}
 .skill{
@@ -416,6 +416,16 @@ a{color:inherit}
 .grid[data-view="detailed"] .card__detail{display:block;font-size:.92rem;color:var(--ink-2);line-height:1.55;margin-top:.8rem}
 .grid[data-view="detailed"] .card__skills{display:flex}
 .grid[data-view="detailed"] .card__cta{display:block}
+.grid[data-view="detailed"] .card__links{display:flex}
+
+.card__links{flex-wrap:wrap;gap:.35rem .9rem;margin-top:.9rem}
+.modal__links{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin:0 0 1.4rem}
+.proj-link{
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.02em;
+  color:var(--accent-ink);text-decoration:none;
+  border-bottom:1px solid var(--accent);padding-bottom:1px;transition:opacity .2s;
+}
+.proj-link:hover{opacity:.65}
 
 /* ============================ MODAL ============================ */
 .modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:1.2rem}
