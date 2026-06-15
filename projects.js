@@ -232,6 +232,17 @@ window.PROJECTS = [
     detail: "Reach out to churches and faith communities in different countries, who bring moral authority, organised membership and a long tradition of speaking on questions of human dignity and the future.",
   },
   {
+    title: "Build a global coalition — a team effort (3+ fellows)",
+    category: "Coalitions & Allies",
+    region: "Global",
+    effort: "Team · 3+ fellows",
+    expertise: "Some experience",
+    contact: "benjamin",
+    blurb: "Combine the cold-outreach threads — scientists, faith leaders, unions, celebrities — into one coordinated push toward a durable global coalition.",
+    skills: ["Coordination", "Cold outreach", "Coalition-building", "Project management"],
+    detail: "For three or more fellows working together. Rather than running the cold-outreach projects (Nobel laureates, national academies, unions, churches, celebrity champions) in isolation, fold them into a single coordinated campaign aimed at standing up a durable global coalition — of scientists, faith leaders, or whichever constituency gains the most traction. More ambitious than any single card, with room for each fellow to own a strand.",
+  },
+  {
     title: "Major-funder / philanthropist search",
     category: "Funding",
     region: "Global",
