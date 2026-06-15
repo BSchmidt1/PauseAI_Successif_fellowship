@@ -15,7 +15,7 @@
   var modal = document.getElementById("modal");
   var modalContent = document.getElementById("modal-content");
 
-  var filters = { region: "all", expertise: "all" };
+  var filters = { region: "all" };
   var view = "compact";
 
   var REGION_LABEL = { DE: "Germany", Global: "Global", Both: "Germany + Global" };
@@ -100,8 +100,7 @@
 
   // ---- render --------------------------------------------------------------
   function matches(p) {
-    return (filters.region === "all" || p.region === filters.region) &&
-           (filters.expertise === "all" || p.expertise === filters.expertise);
+    return filters.region === "all" || p.region === filters.region;
   }
 
   function render() {
