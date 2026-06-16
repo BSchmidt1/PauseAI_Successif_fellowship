@@ -294,14 +294,14 @@ window.PROJECTS = [
     detail: "Launch a public pledge inviting researchers to commit not to work on frontier capability scaling — echoing past 'trust your conscience / quit your job' movements. Norm-shifting if it catches, but easy to caricature, so framing matters.",
   },
   {
-    title: "SitRep — polish & extend the daily AI-risk brief",
+    title: "SitRep — polish & extend the daily automatic AI-risk brief for every chapter",
     category: "Capacity & Infrastructure",
     region: "Global",
     effort: "20–60h",
     expertise: "Specialist",
-    contact: "matilda",
+    contact: "benjamin",
     blurb: "Improve SitRep: a daily Markdown brief, auto-generated at 03:00 UTC, filtering pause-relevant signal from curated sources.",
     skills: ["Python / automation", "NLP", "News curation", "Product sense"],
-    detail: "SitRep already exists as a working prototype: a daily Markdown brief, auto-generated at 03:00 UTC, that filters pause-relevant signal from a curated set of sources and goes to a small distribution list. Help polish the rough edges, broaden the sources, and grow the distribution. Matilda da Rue currently maintains it.",
+    detail: "SitRep already exists as a working prototype: a daily Markdown brief, auto-generated at 03:00 UTC, that filters pause-relevant signal from a curated set of sources and goes to a small distribution list. Help polish the rough edges, broaden the sources, and grow the distribution so every chapter can rely on it.",
   },
 ];
