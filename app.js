@@ -91,8 +91,6 @@
             '<span class="btn-interest__to">→ ' + esc(c.name.split(" ")[0]) + "</span>" +
           "</a>" +
         "</div>" +
-
-        '<span class="card__expand">Click for details &amp; contact →</span>' +
       "</article>"
     );
   }
