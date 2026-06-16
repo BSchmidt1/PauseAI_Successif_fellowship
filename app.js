@@ -86,10 +86,8 @@
         "</div>" +
 
         '<div class="card__cta">' +
-          '<a class="btn-interest" href="' + mailtoFor(p) + '">' +
-            "Express interest " +
-            '<span class="btn-interest__to">→ ' + esc(c.name.split(" ")[0]) + "</span>" +
-          "</a>" +
+          '<span class="cta-label">Express interest / learn more</span>' +
+          '<a class="cta-email" href="' + mailtoFor(p) + '">' + esc(c.email) + "</a>" +
         "</div>" +
       "</article>"
     );
@@ -143,8 +141,10 @@
       "</dl>" +
       '<div class="modal__skills">' + skills + "</div>" +
       linksHTML(p, "modal__links") +
-      '<a class="btn-interest" href="' + mailtoFor(p) + '">Express interest ' +
-        '<span class="btn-interest__to">→ ' + esc(c.name) + "</span></a>";
+      '<div class="card__cta">' +
+        '<span class="cta-label">Express interest / learn more</span>' +
+        '<a class="cta-email" href="' + mailtoFor(p) + '">' + esc(c.email) + "</a>" +
+      "</div>";
 
     modal.hidden = false;
     document.body.style.overflow = "hidden";
@@ -159,7 +159,7 @@
   // ---- events --------------------------------------------------------------
   // open modal on card click / Enter / Space (compact view only)
   grid.addEventListener("click", function (e) {
-    if (e.target.closest(".btn-interest")) return; // let mailto work
+    if (e.target.closest("a")) return; // let links (mailto, references) work
     if (view !== "compact") return;
     var card = e.target.closest(".card");
     if (card) openModal(+card.getAttribute("data-i"));
