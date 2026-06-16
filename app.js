@@ -71,7 +71,7 @@
         '<span class="card__index">PROJECT ' + pad(i + 1) + " / " + pad(PROJECTS.length) + "</span>" +
         '<div class="card__tags">' +
           '<span class="tag tag--region">' + esc(REGION_LABEL[p.region] || p.region) + "</span>" +
-          '<span class="tag tag--exp">' + esc(p.expertise) + "</span>" +
+          (p.experimental ? '<span class="tag tag--experimental">experimental</span>' : "") +
         "</div>" +
         '<h3 class="card__title">' + esc(p.title) + "</h3>" +
         '<p class="card__blurb">' + esc(p.blurb) + "</p>" +
@@ -82,7 +82,6 @@
         linksHTML(p, "card__links") +
 
         '<div class="card__meta">' +
-          '<span class="card__effort">⏱ ' + esc(p.effort) + "</span>" +
           '<span class="card__cat">' + esc(p.category) + "</span>" +
         "</div>" +
 
@@ -137,12 +136,10 @@
       "<h3>" + esc(p.title) + "</h3>" +
       '<div class="modal__tags">' +
         '<span class="tag tag--region">' + esc(REGION_LABEL[p.region] || p.region) + "</span>" +
-        '<span class="tag tag--exp">' + esc(p.expertise) + "</span>" +
+        (p.experimental ? '<span class="tag tag--experimental">experimental</span>' : "") +
       "</div>" +
       '<p class="modal__detail">' + esc(p.detail) + "</p>" +
       '<dl class="modal__facts">' +
-        '<div class="modal__fact"><dt>Effort</dt><dd>' + esc(p.effort) + "</dd></div>" +
-        '<div class="modal__fact"><dt>Expertise</dt><dd>' + esc(p.expertise) + "</dd></div>" +
         '<div class="modal__fact"><dt>Region</dt><dd>' + esc(REGION_LABEL[p.region] || p.region) + "</dd></div>" +
         '<div class="modal__fact"><dt>Contact</dt><dd>' + esc(c.name) + "</dd></div>" +
       "</dl>" +

@@ -375,6 +375,7 @@ a{color:inherit}
 }
 .tag--region{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .tag--exp{color:var(--accent-ink);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+.tag--experimental{color:var(--ink-3);border:1px dashed var(--line-strong);background:transparent}
 .card__title{
   font-family:var(--serif);font-weight:600;font-size:1.24rem;line-height:1.18;
   letter-spacing:-.01em;margin-bottom:.5rem;
@@ -387,7 +388,7 @@ a{color:inherit}
   font-family:var(--mono);font-size:.74rem;color:var(--ink-3);
 }
 .card__effort{color:var(--ink);font-weight:600}
-.card__cat{margin-left:auto;text-transform:uppercase;letter-spacing:.08em;font-size:.66rem}
+.card__cat{text-transform:uppercase;letter-spacing:.08em;font-size:.66rem}
 
 /* detailed-only blocks (hidden in compact) */
 .card__detail,.card__skills,.card__cta,.card__links{display:none}
